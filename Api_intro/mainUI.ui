@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>48</width>
+    <height>48</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="import_main" native="true">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>-1</x>
+      <y>-1</y>
+      <width>401</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(244, 241, 222);
+</string>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>91</x>
+       <y>22</y>
+       <width>221</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <italic>true</italic>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(129, 178, 154);</string>
+     </property>
+     <property name="text">
+      <string>WareHouse Management</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="importBtn">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>350</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #E07A5F;
+border-radius : 20px;</string>
+     </property>
+     <property name="text">
+      <string>Add</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="result_text">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>410</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="toExport">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>400</y>
+       <width>71</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #E07A5F;
+border-radius : 20px;</string>
+     </property>
+     <property name="text">
+      <string>Inventory</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>60</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <italic>false</italic>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(129, 178, 154);</string>
+     </property>
+     <property name="text">
+      <string>By Khun Myat Hpone</string>
+     </property>
+    </widget>
+    <widget class="QSplitter" name="splitter">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>120</y>
+       <width>261</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <widget class="QLineEdit" name="name">
+      <property name="styleSheet">
+       <string notr="true">border-radius : 20%;
+background-color: rgb(255, 255, 255);
+padding : 10px;</string>
+      </property>
+      <property name="placeholderText">
+       <string>Name</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="price">
+      <property name="styleSheet">
+       <string notr="true">border-radius : 20%;
+background-color: rgb(255, 255, 255);
+padding : 10px;</string>
+      </property>
+      <property name="placeholderText">
+       <string>Price</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="model">
+      <property name="styleSheet">
+       <string notr="true">border-radius : 20%;
+background-color: rgb(255, 255, 255);
+padding : 10px;</string>
+      </property>
+      <property name="placeholderText">
+       <string>Model</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="discription">
+      <property name="styleSheet">
+       <string notr="true">border-radius : 20%;
+background-color: rgb(255, 255, 255);
+padding : 10px;</string>
+      </property>
+      <property name="placeholderText">
+       <string>Discription</string>
+      </property>
+     </widget>
+    </widget>
+    <zorder>toExport</zorder>
+    <zorder>label</zorder>
+    <zorder>name</zorder>
+    <zorder>price</zorder>
+    <zorder>model</zorder>
+    <zorder>discription</zorder>
+    <zorder>importBtn</zorder>
+    <zorder>result_text</zorder>
+    <zorder>label_3</zorder>
+   </widget>
+   <widget class="QWidget" name="export_main" native="true">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>-1</x>
+      <y>-1</y>
+      <width>411</width>
+      <height>471</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(244, 241, 222);</string>
+    </property>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>30</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Export Management</string>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="listWidget">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>151</y>
+       <width>391</width>
+       <height>311</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Candara Light</family>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius : 20px
+</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="back">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #F2CC8F;
+border-radius : 20px;</string>
+     </property>
+     <property name="text">
+      <string>↩</string>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>24</width>
+       <height>24</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="searchbox">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>80</y>
+       <width>191</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius : 20px;
+
+</string>
+     </property>
+     <property name="placeholderText">
+      <string>Search With Model Name</string>
+     </property>
+    </widget>
+    <widget class="QSplitter" name="splitter_2">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>80</y>
+       <width>91</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QPushButton" name="find">
+      <property name="styleSheet">
+       <string notr="true">background-color: #E07A5F;
+border-radius : 20px;</string>
+      </property>
+      <property name="text">
+       <string>⌕</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="reload">
+      <property name="styleSheet">
+       <string notr="true">background-color: #E07A5F;
+border-radius : 20px;</string>
+      </property>
+      <property name="text">
+       <string>↻</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="edit_box" native="true">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>60</y>
+      <width>301</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(244, 241, 222);
+border-radius : 20px;
+
+</string>
+    </property>
+    <widget class="QPushButton" name="update">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>230</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #F2CC8F;
+border-radius : 20px;</string>
+     </property>
+     <property name="text">
+      <string>Update</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="delete_btn">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>230</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: #F2CC8F;
+border-radius : 20px;</string>
+     </property>
+     <property name="text">
+      <string>Delete</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="uitem_label">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>20</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(242, 204, 143);
+color : rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Edit Item</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="close_box">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>10</y>
+       <width>41</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+border-radius : 20px;</string>
+     </property>
+     <property name="text">
+      <string>X</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="uResult">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>210</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>-1</x>
+       <y>-1</y>
+       <width>301</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(242, 204, 143);
+</string>
+     </property>
+    </widget>
+    <widget class="QSplitter" name="splitter_3">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>50</y>
+       <width>181</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <widget class="QLineEdit" name="uname">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+padding : 10px;
+border-radius : 10px;</string>
+      </property>
+      <property name="placeholderText">
+       <string>name</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="uprice">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+padding : 10px;
+border-radius : 10px;</string>
+      </property>
+      <property name="placeholderText">
+       <string>price</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="umodel">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+padding : 10px;
+border-radius : 10px;</string>
+      </property>
+      <property name="placeholderText">
+       <string>model</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="udisc">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+padding : 10px;
+border-radius : 10px;</string>
+      </property>
+      <property name="placeholderText">
+       <string>discription</string>
+      </property>
+     </widget>
+    </widget>
+    <zorder>widget</zorder>
+    <zorder>update</zorder>
+    <zorder>delete_btn</zorder>
+    <zorder>uResult</zorder>
+    <zorder>splitter_3</zorder>
+    <zorder>uitem_label</zorder>
+    <zorder>close_box</zorder>
+   </widget>
+   <zorder>export_main</zorder>
+   <zorder>import_main</zorder>
+   <zorder>edit_box</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
